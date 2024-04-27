@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  padding: 1px;
+}
+
+/* nav bar code  */
+
+#nav {
+  height: 10vh;
+  width: 100%;
+  margin-top: 14px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 32px; */
+}
+
+/* nav h1  */
+
+#nav h1 {
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "monument";
+  font-size: 28px;
+  letter-spacing: -2px;
+  position: relative;
+}
+
+#nav h1::after {
+  content: "©️";
+  font-family: "gilroy";
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  right: 18%;
+}
+
+#nav h1::before {
+  content: "model management";
+  font-family: "gilroy";
+  font-weight: 500;
+  color: #666;
+  font-size: 12px;
+  position: absolute;
+  letter-spacing: 0.1px;
+  bottom: 12%;
+  right: 20%;
+}
+
+/* nav h2 */
+
+#nav h2 {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: brown; */
+  border-right: 2px solid #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#nav h2:nth-last-child(1) {
+  width: 10%;
+  border: none;
+  font-size: 20px;
+}
+#nav h2:nth-last-child(2) {
+  width: 29%;
+}
+
+/* center div  */
+
+#center {
+  width: 100%;
+  height: 90%;
+  padding: 2vw;
+  position: relative;
+}
+
+/* content div  */
+
+#center #content {
+  height: 100%;
+  width: 100%;
+  background-color: royalblue;
+  position: relative;
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* overlay div */
+
+#content #overlay {
+  height: 52%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3vw;
+  /* background-color: #00000012; */
+  /* backdrop-filter: blur(10px); */
+}
+
+/* over1 */
+
+#overlay #over1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 2vw;
+}
+
+/* over1 h1  */
+
+#over1 h1 {
+  font-family: "monument";
+  font-size: 2.5vw;
+  mix-blend-mode: difference;
+}
+
+/* over1 h2  */
+
+#over1 h2 {
+  font-size: 1vw;
+  padding: 2vw 2.2vw;
+  border-radius: 50%;
+  border: 2px solid #a6a4a4;
+  border-bottom: 3px solid #fff;
+}
+
+/* over2 */
+
+#overlay #over2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  border-top: 2px solid #fff;
+  padding: 1.5vw 0;
+}
+
+/* over2 h4 */
+
+#over2 h4 {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+/* over2 img  */
+
+#over2 img {
+  height: 3vw;
+}
+
+/* scroll div  */
+
+#scroll {
+  height: 40vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* container div  */
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 2vw;
+
+  animation-name: anime;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* img */
+
+#scroll img {
+  height: 95%;
+  width: 15%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin: 1vw;
+}
+
+/* animation create on container div  */
+
+@keyframes anime {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* alphabet div  */
+
+#alphabet {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+#alphabet h5 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 2px solid #000000;
+  letter-spacing: 4px;
+  margin-right: 2vw;
+}
+
+#alphabet h6 {
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0.5vw 0.7vw;
+  border-radius: 50%;
+  border: 2px solid #00000000;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+#alphabet h6:hover {
+  border: 2px solid #000000;
+}
+
+/* page 2 div  */
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 5vw;
+  position: relative;
+}
+
+/* part 1 */
+
+#page2-p1 {
+  height: 80%;
+  width: 40%;
+  background-image: url(https://images.unsplash.com/photo-1587367336516-887f58881b13?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  position: relative;
+}
+
+#page2-p1 h1 {
+  position: absolute;
+  bottom: -8%;
+  font-size: 28px;
+}
+
+/* part 2 */
+
+#page2-p2 {
+  height: 100%;
+  width: 46%;
+}
+
+#page2-p2 img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 20px;
+}
+
+/* page 3 */
+
+#page3 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 5vw 4vw;
+}
+
+#page3 > h1 {
+  font-family: "monument";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  margin-bottom: 7vh;
+}
+
+#page3 > h1:hover {
+  color: #211d1d;
+}
+
+.elem {
+  height: 14vh;
+  width: 100%;
+  /* background-color: red; */
+  border-top: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+}
+
+.elem img {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  border-radius: 50%;
+  left: 12%;
+  object-fit: cover;
+  object-position: top;
+  opacity: 0;
+  transition: all ease 0.8s;
+}
+
+.elem:hover {
+  background-color: #e9e8e8;
+}
+
+.elem:hover img {
+  opacity: 1;
+  left: 24%;
+}
+
+.elem h4 {
+  font-size: 1vw;
+  width: 4%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.elem .elem-p2 {
+  width: 45%;
+}
+
+.elem .elem-p2 h1 {
+  font-size: 2.4vw;
+  font-weight: 500;
+}
+
+.elem .elem-p2 h5 {
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.elem:nth-last-child(1) {
+  border-bottom: 2px solid #000;
+}
+
+/* page 4 marque */
+
+#page4 {
+  height: 12vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0.8vw;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+#page4 h1 {
+  display: inline-block;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  font-family: "monument";
+  margin-right: 16px;
+  letter-spacing: 0.4vw;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+/* footer */
+
+#footer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+#footer h1 {
+  font-size: 1.4vw;
+}
+
+/* ++++++++++++++++++++++++++++ */
+
+/* responsiveness start here  */
+
+@media (max-width: 500px) {
+
+   /* nav bar code  */
+
+   #nav {
+    height: 8vh;
+    margin-top: 4px;
+
+  /* nav h1  */
+
+  #nav h1 {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "monument";
+    font-size: 20px;
+    letter-spacing: -2px;
+    position: relative;
+  }
+
+  #nav h1::after {
+    content: "©️";
+    font-family: "gilroy";
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    right: 18%;
+  }
+
+  #nav h1::before {
+    content: "model management";
+    font-family: "gilroy";
+    font-weight: 500;
+    color: #666;
+    font-size: 12px;
+    position: absolute;
+    letter-spacing: 0.1px;
+    bottom: 12%;
+    right: 20%;
+  }
+
+  /* nav h2 */
+
+  #nav h2 {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+    border-right: 2px solid #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  #nav h2:nth-last-child(1) {
+    width: 10%;
+    border: none;
+    font-size: 20px;
+  }
+  #nav h2:nth-last-child(2) {
+    width: 29%;
+  } 
+}
